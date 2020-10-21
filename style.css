@@ -10,10 +10,8 @@
     --button_color: #3fb6dc;
     --background_color: #3fb6dc;
 }
-.pure-group {
-    width: 70%;
 
-}
+
 
 body {
     /*
@@ -29,10 +27,12 @@ body {
     overflow: hidden;
 }
 
+#Adresse {
+    width: 81%!important;
+}
 #regForm {
     background-color: rgba(0, 0, 0, 0.0);
     margin: 50px auto;
-    /*font-family: Raleway, serif;*/
     min-width: 300px;
     align-items: center;
 }
@@ -53,14 +53,32 @@ input {
     width: 40%;
 }
 #contact .pure-group {
-    width: 50%;
+    width: 100%;
+    max-width: 600px;
 }
+
+@media only screen and (max-width: 600px) {
+    #contact .pure-group {
+        margin-top: 20px;
+        width: 100%;
+        padding: 0px;
+    }
+}
+
+
 label[for=PLZ]::after {
     /*content: "\A";*/
 }
 
-#email {
-    margin-left: 18.12%;
+#PLZ {
+    width: 20%!important;
+}
+#Ort{
+    width: 60%!important;
+}
+
+#Tel {
+    margin-left: -5px;
 }
 
 .pure-group {
@@ -74,7 +92,11 @@ img.input-btn {
     width: 150px;
     height: 195px;
     font-size: 17px;
-    font-family: Raleway, serif;
+    font-family: "Futura PT",sans-serif;
+    color: #39374d;
+    font-weight: 500;
+    letter-spacing: .1px;
+    text-rendering: optimizeLegibility;
     display: inline-block;
 }
 
@@ -87,14 +109,12 @@ img.input-btn-selected {
     width: 160px;
     height: 208px;
     font-size: 17px;
-    font-family: Raleway, serif;
     display: inline-block;
 }
 
 p.tab-title {
-    /*font-family: "Arial Rounded MT Bold", serif;*/
-    color: #4b4343;
-    font-size: 25px;
+    color: #39374d;
+    font-size: 1.5em;
     text-align: center;
     padding: 3%;
     margin: 0;
@@ -115,16 +135,7 @@ input.invalid {
     display: none;
 }
 
-/*
-  button {
-    background-color: var(--button_color);
-    color: #ffffff;
-    border: none;
-    padding: 10px 20px;
-    font-size: 17px;
-    /*font-family: Raleway, serif;
-    cursor: pointer;
-  }*/
+
 
 button:hover {
     opacity: 0.8;
@@ -162,10 +173,7 @@ progress[value] {
     align-self: center;
     appearance: auto;
     background-color: transparent !important;
-    /*
-  background-color: var(--background_color);*/
-
-    border: 0;
+    border: 1px solid grey;
     height: 18px;
     border-radius: 9px;
 }
