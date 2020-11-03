@@ -31,10 +31,11 @@ body {
     width: 81%!important;
 }
 #regForm {
-    background-color: rgba(0, 0, 0, 0.0);
+    background-color: rgba(255, 255, 255, 0.5);
     margin: 50px auto;
     min-width: 300px;
     align-items: center;
+    padding: 50px;
 }
 
 h1 {
@@ -83,6 +84,7 @@ label[for=PLZ]::after {
 
 .pure-group {
     margin-top: -20px;
+
 }
 
 
@@ -98,6 +100,8 @@ img.input-btn {
     letter-spacing: .1px;
     text-rendering: optimizeLegibility;
     display: inline-block;
+    background-color: white;
+    border-radius: 10px;
 }
 
 .pure-group .input-btn:hover {
@@ -110,6 +114,8 @@ img.input-btn-selected {
     height: 208px;
     font-size: 17px;
     display: inline-block;
+    background-color: #d4ffdb;
+    border-radius: 10px;
 }
 
 p.tab-title {
@@ -123,6 +129,7 @@ p.tab-title {
 fieldset.pure-group {
     display: inline-block;
     border: none;
+
 }
 
 /* Mark input boxes that gets an error on validation: */
@@ -173,27 +180,33 @@ progress[value] {
     align-self: center;
     appearance: auto;
     background-color: transparent !important;
-    border: 1px solid grey;
-    height: 18px;
     border-radius: 9px;
+    border: 2px solid #bbb;
+    height: 30px;
 }
 
 progress::-webkit-progress-bar {
     /* chrome */
     border-radius: 9px;
-    background-color: var(--background_color);
+    /*
+    background-color: var(--background_color);*/
+    background-color: #19de55;
 }
 
 progress::-webkit-progress-value {
     /* chrome */
     border-radius: 9px;
-    background-color: var(--button_color);
+    /*
+    background-color: var(--button_color);*/
+    background-color: #19de55;
 }
 
 progress::-moz-progress-bar {
     /* firefox */
     border-radius: 9px;
-    background-color: var(--button_color);
+    /*
+    background-color: var(--button_color);*/
+    background-color: #19de55;
 }
 
 .loader {
