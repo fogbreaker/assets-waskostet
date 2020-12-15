@@ -30,60 +30,24 @@ body {
 #Adresse {
     width: 81%!important;
 }
+
 #regForm {
-    background-color: rgba(255, 255, 255, 0.5);
-    margin: 50px auto;
-    min-width: 300px;
+    /*background-color: rgba(255, 255, 255, 0.5);*/
+    background-color: rgba(0, 0, 0, 0.1);
+    margin: 0 auto;
+    min-width: 400px;
     align-items: center;
-    padding: 50px;
+    padding: 20px;
 }
 
-h1 {
-    text-align: center;
-}
-
-input {
-    padding: 10px;
-    width: 60%;
-    margin-top: 10px;
-    font-size: 17px;
-    font-family: Raleway, serif;
-}
-
-#contact .pure-group input {
-    width: 40%;
-}
-#contact .pure-group {
-    width: 100%;
-    max-width: 600px;
-}
-
-@media only screen and (max-width: 600px) {
-    #contact .pure-group {
-        margin-top: 20px;
-        width: 100%;
-        padding: 0px;
+@media only screen and (max-width: 667px) {
+    #regForm {
+        margin-top: 100px;
+        background-color: rgba(0, 0, 0, 0.1);
+        min-width: 400px;
+        align-items: center;
+        padding: 20px;
     }
-}
-
-
-label[for=PLZ]::after {
-    /*content: "\A";*/
-}
-
-#PLZ {
-    width: 20%!important;
-}
-#Ort{
-    width: 60%!important;
-}
-
-#Tel {
-    margin-left: -5px;
-}
-
-.pure-group {
-    margin-top: -20px;
 
 }
 
@@ -100,26 +64,122 @@ img.input-btn {
     letter-spacing: .1px;
     text-rendering: optimizeLegibility;
     display: inline-block;
+    background-color: white;
+    border-radius: 20px;
 }
 
-.pure-group .input-btn:hover {
-    cursor: pointer;
+
+@media only screen and (max-width: 667px) {
+    img.input-btn {
+        margin-top: 15px;
+        padding: 3px;
+        width: 125px;
+        height: 170px;
+        font-size: 17px;
+        font-family: "Futura PT",sans-serif;
+        color: #39374d;
+        font-weight: 500;
+        letter-spacing: .1px;
+        text-rendering: optimizeLegibility;
+        display: inline-block;
+        background-color: white;
+        border-radius: 10px;
+    }
+
 }
 
 img.input-btn-selected {
     padding: 5px;
     width: 160px;
-    height: 208px;
+    height: 210px;
     font-size: 17px;
     display: inline-block;
+    background-color: #a7eaff;
+    border-radius: 20px;
 }
 
-p.tab-title {
-    color: #39374d;
-    font-size: 1.5em;
+@media only screen and (max-width: 667px) {
+    img.input-btn-selected {
+        padding: 5px;
+        width: 140px;
+        height: 180px;
+        font-size: 17px;
+        display: inline-block;
+        background-color: #a7eaff;
+        border-radius: 10px;
+    }
+
+}
+
+
+
+h1 {
     text-align: center;
-    padding: 3%;
-    margin: 0;
+}
+
+input {
+    padding: 10px;
+    width: 60%;
+    margin-top: 10px;
+    font-size: 1.2em;
+    font-family: "Open Sans", sans-serif;
+}
+
+#contact .pure-group input {
+    width: 40%;
+}
+#contact .pure-group {
+    width: 100%;
+    max-width: 600px;
+}
+
+@media only screen and (max-width: 600px) {
+    #contact .pure-group {
+        margin-top: 20px;
+        padding: 0;
+        width: 120%;
+        margin-left: -50px;
+    }
+}
+
+
+label[for=PLZ]::after {
+    /*content: "\A";*/
+}
+
+#PLZ {
+    width: 20%!important;
+}
+#Ort{
+    width: 60%!important;
+}
+/*
+#Tel {
+    margin-left: -5px;
+}
+*/
+.pure-group {
+    margin-top: -20px;
+
+}
+
+
+.pure-group .input-btn:hover {
+    cursor: pointer;
+}
+
+
+
+.tab-title {
+    color: #39374d;
+    font-size: 1.4em;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    padding: 15px;
+
+    background-color: white;
+    font-family: "Open Sans", sans-serif;
 }
 
 fieldset.pure-group {
@@ -175,28 +235,39 @@ progress[value] {
     align-content: center;
     align-self: center;
     appearance: auto;
-    background-color: transparent !important;
-    border: 1px solid grey;
-    height: 18px;
+
+    background-color: white!important;
     border-radius: 9px;
+    border: 2px solid #bbb;
+    height: 30px;
 }
 
 progress::-webkit-progress-bar {
     /* chrome */
     border-radius: 9px;
+    /*
     background-color: var(--background_color);
+    background-color: #3fb6dc;*/
+    background-color: #3fb6dc;
+
 }
 
 progress::-webkit-progress-value {
     /* chrome */
     border-radius: 9px;
+    /*
     background-color: var(--button_color);
+    background-color: #3fb6dc;*/
+    background-color: #3fb6dc;
 }
 
 progress::-moz-progress-bar {
     /* firefox */
     border-radius: 9px;
+    /*
     background-color: var(--button_color);
+    background-color: #3fb6dc;*/
+    background-color: #3fb6dc;
 }
 
 .loader {
