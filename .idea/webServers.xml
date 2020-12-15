@@ -2,8 +2,8 @@
 <project version="4">
   <component name="WebServers">
     <option name="servers">
-      <webServer id="bb0bfbf1-dd78-4458-8786-638cf2e51f52" name="assets.was-kostet.at" url="http://assets.was-kostet.at">
-        <fileTransfer host="assets.was-kostet.at" port="21" accessType="FTPS">
+      <webServer id="c440791f-281f-472e-926c-77083ebfe89e" name="ASSETS" url="http://was-kostet.at">
+        <fileTransfer host="was-kostet.at" port="21" accessType="FTPS">
           <advancedOptions>
             <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
           </advancedOptions>
