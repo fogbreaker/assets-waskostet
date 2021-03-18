@@ -30,16 +30,23 @@ body {
 #Adresse {
     width: 81%!important;
 }
-
+#agb {
+    font-size: 1.2em!important;;
+}
 #regForm {
     /*background-color: rgba(255, 255, 255, 0.5);*/
-    background-color: rgba(0, 0, 0, 0.1);
+    /*background-color: rgba(0, 0, 0, 0.1);*/
+    background-color: rgba(255, 255, 255, 1);
     margin: 0 auto;
     min-width: 400px;
     align-items: center;
     padding: 20px;
+
 }
 
+#suche{
+    background-color:white;
+}
 @media only screen and (max-width: 667px) {
     #regForm {
         margin-top: 100px;
@@ -65,7 +72,7 @@ img.input-btn {
     text-rendering: optimizeLegibility;
     display: inline-block;
     background-color: white;
-    border-radius: 10px;
+    border-radius: 20px;
 }
 
 
@@ -95,7 +102,7 @@ img.input-btn-selected {
     font-size: 17px;
     display: inline-block;
     background-color: #a7eaff;
-    border-radius: 10px;
+    border-radius: 20px;
 }
 
 @media only screen and (max-width: 667px) {
@@ -125,9 +132,6 @@ input {
     font-family: "Open Sans", sans-serif;
 }
 
-#contact .pure-group input {
-    width: 40%;
-}
 #contact .pure-group {
     width: 100%;
     max-width: 600px;
@@ -177,7 +181,7 @@ label[for=PLZ]::after {
     margin-top: 30px;
     margin-bottom: 30px;
     padding: 15px;
-    margin-left: -20px;
+
     background-color: white;
     font-family: "Open Sans", sans-serif;
 }
@@ -237,7 +241,7 @@ progress[value] {
     appearance: auto;
 
     background-color: white!important;
-    border-radius: 9px;
+    border-radius: 11px;
     border: 2px solid #bbb;
     height: 30px;
 }
@@ -293,16 +297,76 @@ button {
     cursor: pointer;
     background-color: #3fb6dc;
     color: #fff;
-    line-height: 50px;
     border: 0 solid white;
-    border-color: white;
+}
+
+#submitBtn{
+    background-color: #3fdc59;
+    width: 280px;
+    font-weight: bold;
+    font-size: large;
 }
 
 @keyframes spin {
-    0% {
-        transform: rotate(0deg);
-    }
-    100% {
-        transform: rotate(360deg);
-    }
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+
+label{
+    font-size: 1.2em;
+    font-weight: 400;
+    color: #ccc;
+}
+
+input[type="checkbox"]{
+    width: 16px;
+}
+
+.agb {
+    font-size: 10px;
+    margin: 10px;
+    width: 60%;
+    display: inline-block;
+    text-align: left;
+}
+
+input[type="radio"]{
+    cursor: pointer;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    outline: 0;
+    background: white;
+    height: 16px;
+    width: 16px;
+    border: 1px solid gray;
+}
+
+input[type="radio"]:checked{
+
+    cursor: pointer;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    outline: 0;
+    background-color: var(--button_color);
+    height: 16px;
+    width: 16px;
+    border: 1px solid gray;
+    /*background: radial-gradient(teal 0%, teal 40%, transparent 50%, transparent);*/
+    box-shadow: inset 0 0 0 3px white;
+}
+
+/*to remove the arrows at plz number input*/
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+    -moz-appearance: textfield;
 }
