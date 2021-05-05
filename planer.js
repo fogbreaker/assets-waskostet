@@ -81,6 +81,7 @@ $('#submitBtn').click(function(){
     });
 });
 
+
 $(document).ready(function(){
     window.onerror = function (msg, url, lineNo, columnNo, error) {
         var string = msg.toLowerCase();
@@ -100,7 +101,8 @@ $(document).ready(function(){
                 'URL: ' + url,
                 'Line: ' + lineNo,
                 'Column: ' + columnNo,
-                'Error object: ' + error
+                'Error object: ' + error,
+                'GCID:' +  getClickId()
             ];
             message = JSON.stringify(message);
 

@@ -16,6 +16,6 @@ if ($error != ""){
 if ($report != ""){
     $mails = ["webmaster@was-kostet.at"];
     foreach ($mails as $mail){
-        mail($mail,"[WAKO] Click-Reporting", $report);
+        //todo enable mail($mail,"[WAKO] Click-Reporting", $report);
     }
 }
